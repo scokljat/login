@@ -5,29 +5,37 @@
   </head>
   <body>
     <form>
-      <div class="container">
-        <h1>Create account</h1>
-        <h3>Already have an account?<a href="#">Sign in</a></h3>
-        <div class="inputWrapper">
-          <div class="blueBg">
-            <input type="text" name="username" />
+      <div class="wrapper">
+        <div class="container">
+          <h1>Create account</h1>
+          <h3>Already have an account?<a href="#">Sign in</a></h3>
+
+          <input type="text" name="username" class="blueBg input" />
+
+          <div class="nameWrapper">
+          <input
+            type="text"
+            placeholder="First name"
+            name="firstName"
+            class="grayBg input"
+          />  
+          <input
+            type="text"
+            placeholder="Last name"
+            name="lastName"
+            class="grayBg input"
+          />
           </div>
-          <div class="grayBg">
-            <input type="text" placeholder="First name" name="firstName" />
-            <input type="text" placeholder="Last name" name="lastName" />
-            <br />
-            <input type="text" placeholder="E-mail" />
-          </div>
-          <br />
-          <button>Sign up</button>
-          <div class="affirmation">
-            <input type="checkbox" id="affirmation" value="affirmation" />
-            <label for="I have read and agree to the Terms of Service"
-              >I have read and agree to the<span style="color: #5898eb"
-                >Terms of Service</span
-              ></label
-            >
-          </div>
+          <input type="text" placeholder="E-mail" class="grayBg input" />
+        <br />
+        <button>Sign up</button>
+        <div class="affirmation">
+          <input type="checkbox" id="affirmation" value="affirmation" />
+          <label for="I have read and agree to the Terms of Service"
+            >I have read and agree to the<span style="color: #5898eb"
+              >Terms of Service</span
+            ></label
+          >
         </div>
       </div>
     </form>
